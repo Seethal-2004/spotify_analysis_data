@@ -20,7 +20,7 @@
 1. Data Extraction: AWS Lambda function using the Spotify API to fetch playlist data and store it as raw JSON in S3.
 2. Data Transformation: Python script running in AWS Lambda processes raw JSON into structured album, artist, and song data and stores them back in S3.
 3. Data Streaming: A Kafka producer script in PyCharm streams cleaned CSV data from S3 into a Kafka topic.
-4. Data Consolidation: Final cleaned CSV is created by merging albums, artists, and songs, then uploaded to S3(`final_clean_spotify_data.csv`).
+4. Data Consolidation: Final cleaned CSV is created by merging albums, artists, and songs, then uploaded to S3(`cleaned_spotify_data.csv`).
 5. Data Loading: A Snowflake SQL script loads the cleaned CSV from S3 into a Snowflake table.
 
 📌 **Conclusion**
